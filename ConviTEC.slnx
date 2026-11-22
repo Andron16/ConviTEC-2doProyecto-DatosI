@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ConviTEC/ConviTEC.csproj" />
+  </Folder>
+</Solution>
