@@ -1,0 +1,184 @@
+{
+    "inventarios": [
+        {
+            "sede": "LIB",
+            "existencias": [
+                {
+                    "codigo": "C001",
+                    "cantidad": 6
+                },
+                {
+                    "codigo": "G014",
+                    "cantidad": 15
+                },
+                {
+                    "codigo": "A003",
+                    "cantidad": 40
+                },
+                {
+                    "codigo": "P020",
+                    "cantidad": 5
+                },
+                {
+                    "codigo": "L005",
+                    "cantidad": 10
+                },
+                {
+                    "codigo": "R010",
+                    "cantidad": 12
+                },
+                {
+                    "codigo": "S007",
+                    "cantidad": 0
+                },
+                {
+                    "codigo": "H002",
+                    "cantidad": 8
+                },
+                {
+                    "codigo": "A015",
+                    "cantidad": 20
+                },
+                {
+                    "codigo": "J004",
+                    "cantidad": 0
+                }
+            ]
+        },
+        {
+            "sede": "ALA",
+            "existencias": [
+                {
+                    "codigo": "C001",
+                    "cantidad": 1
+                },
+                {
+                    "codigo": "G014",
+                    "cantidad": 30
+                },
+                {
+                    "codigo": "A003",
+                    "cantidad": 0
+                },
+                {
+                    "codigo": "P020",
+                    "cantidad": 12
+                },
+                {
+                    "codigo": "L005",
+                    "cantidad": 18
+                },
+                {
+                    "codigo": "R010",
+                    "cantidad": 9
+                },
+                {
+                    "codigo": "S007",
+                    "cantidad": 20
+                },
+                {
+                    "codigo": "H002",
+                    "cantidad": 6
+                },
+                {
+                    "codigo": "A015",
+                    "cantidad": 15
+                },
+                {
+                    "codigo": "J004",
+                    "cantidad": 0
+                }
+            ]
+        },
+        {
+            "sede": "SJO",
+            "existencias": [
+                {
+                    "codigo": "C001",
+                    "cantidad": 20
+                },
+                {
+                    "codigo": "G014",
+                    "cantidad": 25
+                },
+                {
+                    "codigo": "A003",
+                    "cantidad": 50
+                },
+                {
+                    "codigo": "P020",
+                    "cantidad": 9
+                },
+                {
+                    "codigo": "L005",
+                    "cantidad": 22
+                },
+                {
+                    "codigo": "R010",
+                    "cantidad": 14
+                },
+                {
+                    "codigo": "S007",
+                    "cantidad": 16
+                },
+                {
+                    "codigo": "H002",
+                    "cantidad": 0
+                },
+                {
+                    "codigo": "A015",
+                    "cantidad": 30
+                },
+                {
+                    "codigo": "J004",
+                    "cantidad": 0
+                }
+            ]
+        },
+        {
+            "sede": "LIM",
+            "existencias": [
+                {
+                    "codigo": "C001",
+                    "cantidad": 8
+                },
+                {
+                    "codigo": "G014",
+                    "cantidad": 10
+                },
+                {
+                    "codigo": "A003",
+                    "cantidad": 30
+                },
+                {
+                    "codigo": "P020",
+                    "cantidad": 0
+                },
+                {
+                    "codigo": "L005",
+                    "cantidad": 6
+                },
+                {
+                    "codigo": "R010",
+                    "cantidad": 11
+                },
+                {
+                    "codigo": "S007",
+                    "cantidad": 7
+                },
+                {
+                    "codigo": "H002",
+                    "cantidad": 10
+                },
+                {
+                    "codigo": "A015",
+                    "cantidad": 25
+                },
+                {
+                    "codigo": "J004",
+                    "cantidad": 0
+                }
+            ]
+        }
+    ]
+}

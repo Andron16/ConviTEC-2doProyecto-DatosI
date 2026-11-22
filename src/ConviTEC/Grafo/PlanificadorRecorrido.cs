@@ -5,7 +5,7 @@ namespace ConviTEC.Grafo;
 
 public class PlanificadorRecorrido //recorrido voraz: en cada paso va al destino pendiente más cercano (Dijkstra)
 {
-    public PlanificadorRecorrido(GrafoMatriz grafo, string origen) => throw new NotImplementedException(); //origen = ubicación de la sede
+    public PlanificadorRecorrido(GrafoMatriz grafo, string origen) { } //origen = ubicación de la sede (lo implementa B)
 
     public bool Activo => throw new NotImplementedException(); //true mientras haya un recorrido iniciado
     public int TiempoAcumulado => throw new NotImplementedException(); //minutos desde la salida (para Venta.TiempoTraslado)

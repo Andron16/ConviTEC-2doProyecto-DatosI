@@ -7,7 +7,7 @@ public class GrafoMatriz //grafo no dirigido y ponderado, implementado con matri
 {
     public const int SinArista = int.MaxValue; //valor en la matriz cuando no hay ruta entre dos nodos
 
-    public GrafoMatriz(int capacidad) => throw new NotImplementedException(); //crea la matriz para hasta 'capacidad' nodos
+    public GrafoMatriz(int capacidad) { } //crea la matriz para hasta 'capacidad' nodos (lo implementa B)
 
     public int CantidadNodos => throw new NotImplementedException(); //nodos agregados hasta ahora
 
