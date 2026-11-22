@@ -1,0 +1,74 @@
+{
+    "productos": [
+        {
+            "codigo": "C001",
+            "nombre": "Café molido 250 g",
+            "descripcion": "Café costarricense de tueste medio",
+            "categoria": "Bebidas calientes",
+            "precio": 2800
+        },
+        {
+            "codigo": "G014",
+            "nombre": "Galletas de vainilla",
+            "descripcion": "Paquete de 6 unidades",
+            "categoria": "Snacks",
+            "precio": 950
+        },
+        {
+            "codigo": "A003",
+            "nombre": "Agua 600 ml",
+            "descripcion": "Agua purificada sin gas",
+            "categoria": "Bebidas",
+            "precio": 700
+        },
+        {
+            "codigo": "P020",
+            "nombre": "Pan cuadrado",
+            "descripcion": "Pan blanco de molde, 500 g",
+            "categoria": "Panadería",
+            "precio": 1650
+        },
+        {
+            "codigo": "L005",
+            "nombre": "Leche 1 L",
+            "descripcion": "Leche semidescremada",
+            "categoria": "Lácteos",
+            "precio": 1100
+        },
+        {
+            "codigo": "R010",
+            "nombre": "Refresco cola 2 L",
+            "descripcion": "Bebida gaseosa",
+            "categoria": "Bebidas",
+            "precio": 1850
+        },
+        {
+            "codigo": "S007",
+            "nombre": "Papas tostadas 150 g",
+            "descripcion": "Papas fritas con sal",
+            "categoria": "Snacks",
+            "precio": 1200
+        },
+        {
+            "codigo": "H002",
+            "nombre": "Huevos (12 unidades)",
+            "descripcion": "Huevos blancos medianos",
+            "categoria": "Abarrotes",
+            "precio": 2400
+        },
+        {
+            "codigo": "A015",
+            "nombre": "Arroz 1 kg",
+            "descripcion": "Arroz blanco 99 % grano entero",
+            "categoria": "Abarrotes",
+            "precio": 1350
+        },
+        {
+            "codigo": "J004",
+            "nombre": "Jabón de baño",
+            "descripcion": "Barra de 120 g",
+            "categoria": "Higiene",
+            "precio": 650
+        }
+    ]
+}

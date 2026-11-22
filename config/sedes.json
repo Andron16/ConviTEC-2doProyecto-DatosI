@@ -1,0 +1,24 @@
+{
+    "sedes": [
+        {
+            "codigo": "LIB",
+            "nombre": "Liberia",
+            "ubicacion": "Liberia"
+        },
+        {
+            "codigo": "ALA",
+            "nombre": "Alajuela",
+            "ubicacion": "Alajuela"
+        },
+        {
+            "codigo": "SJO",
+            "nombre": "San José",
+            "ubicacion": "San José"
+        },
+        {
+            "codigo": "LIM",
+            "nombre": "Limón",
+            "ubicacion": "Limón"
+        }
+    ]
+}
