@@ -6,9 +6,11 @@ using ConviTEC.Grafo; //GrafoMatriz, CargadorGrafo
 using ConviTEC.Mensajeria; //ClienteMensajeria
 using ConviTEC.Modelos; //Sede
 using ConviTEC.Persistencia; //AlmacenSede
+using ConviTEC.Pruebas; //EjecutorPruebas
 using ConviTEC.Servicios; //servicios
 
 // Uso: dotnet run --project src/ConviTEC --no-launch-profile -- --sede ALA --puerto 5001 --rabbit localhost
+// Pruebas: dotnet run --project src/ConviTEC --no-launch-profile -- --pruebas [A|B|C|D]
 
 string codigoSede = Argumento("--sede", "ALA").ToUpper(); //sede que representa esta instancia
 int puerto = int.Parse(Argumento("--puerto", "5001")); //puerto de la web de esta sede
@@ -19,6 +21,12 @@ string claveRabbit = Argumento("--clave", "convitec");
 string carpetaProyecto = Buscar(d => File.Exists(Path.Combine(d, "wwwroot", "index.html")), Path.Combine("src", "ConviTEC")); //donde está wwwroot
 string carpetaConfig = Path.Combine(Buscar(d => File.Exists(Path.Combine(d, "config", "sedes.json")), ""), "config"); //config/ en la raíz del repo
 string carpetaDatos = Path.Combine(Path.GetDirectoryName(carpetaConfig), "datos"); //datos/ junto a config/ (ignorado por Git)
+
+if (Array.IndexOf(args, "--pruebas") != -1) //modo pruebas: ejecuta las pruebas y termina sin levantar la sede
+{
+    Environment.ExitCode = EjecutorPruebas.Ejecutar(Argumento("--pruebas", "todos"), carpetaConfig, hostRabbit, usuarioRabbit, claveRabbit);
+    return;
+}
 
 var almacen = new AlmacenSede(carpetaConfig, carpetaDatos, codigoSede);
 Sede[] sedes = Intentar(() => almacen.CargarSedes(), new[] { new Sede { Codigo = codigoSede, Nombre = codigoSede, Ubicacion = codigoSede } }, "cargar config/sedes.json");
