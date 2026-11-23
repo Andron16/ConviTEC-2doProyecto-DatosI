@@ -36,9 +36,9 @@ var pedidos = new ServicioPedidos(sede, grafo, inventario, coordinador, almacen)
 var ventas = new ServicioVentas(almacen);
 var rutas = new ServicioRutas(sede, sedes, grafo, pedidos, ventas);
 
-inventario.Cargar(); //recupera la información guardada y reconstruye las estructuras
-pedidos.Cargar();
-ventas.Cargar();
+Intentar(() => { inventario.Cargar(); return true; }, false, "cargar el inventario"); //recupera la información guardada y reconstruye las estructuras
+Intentar(() => { pedidos.Cargar(); return true; }, false, "cargar los pedidos");
+Intentar(() => { ventas.Cargar(); return true; }, false, "cargar las ventas");
 if (mensajeria.Conectar()) { Console.WriteLine($"Conectado a RabbitMQ en {hostRabbit}."); coordinador.SolicitarInventarios(); }
 else Console.WriteLine($"Sin conexión con RabbitMQ en {hostRabbit}: la sede funciona sola.");
 
